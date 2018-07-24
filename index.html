@@ -1,1 +1,169 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>habrahabr-universal-component</title><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/favicon.ico"><link href="/style.a49d5.css" rel="stylesheet"></head><body><div class="uikit"><div class="uikitBox"><div class="uikitTitle">OtcDate:</div><div class="uikitLabel">Выбрать одну дату без времени (DD.MM.YYYY), т.е. с точностью до дня</div><div class="uikitTitle">Параметры:</div><div class="uikitParams"></div><div class="uikitTitle">Демо:</div><div class="uikitDemo"><div><div class="textfieldBox rootInput"><input class="textfieldInput" value><div class="textfieldIconBox"><div class="icon rootIcon" style="background-image: url(/d75e38094c43914238309cd269ed58c3.svg);"></div></div></div></div></div></div><div class="uikitBox"><div class="uikitTitle">OtcDate:</div><div class="uikitLabel">Выбрать одну дату со временем (DD.MM.YYYY hh24:mi), т.е. с точностью до минуты.</div><div class="uikitTitle">Параметры:</div><div class="uikitParams"></div><div class="uikitTitle">Демо:</div><div class="uikitDemo"><div><div class="textfieldBox rootInput"><input class="textfieldInput" value><div class="textfieldIconBox"><div class="icon rootIcon" style="background-image: url(/d75e38094c43914238309cd269ed58c3.svg);"></div></div></div></div></div></div><div class="uikitBox"><div class="uikitTitle">OtcDate:</div><div class="uikitLabel">Выбрать одну дату со временем (DD.MM.YYYY hh24:mi), т.е. с точностью до минуты. (время обязательно для заполнения)</div><div class="uikitTitle">Параметры:</div><div class="uikitParams"></div><div class="uikitTitle">Демо:</div><div class="uikitDemo"><div><div class="textfieldBox rootInput"><input class="textfieldInput" value><div class="textfieldIconBox"><div class="icon rootIcon" style="background-image: url(/d75e38094c43914238309cd269ed58c3.svg);"></div></div></div></div></div></div><div class="uikitBox"><div class="uikitTitle">OtcDateRange:</div><div class="uikitLabel">Выбрать диапазон дат: С и ПО</div><div class="uikitTitle">Параметры:</div><div class="uikitParams"></div><div class="uikitTitle">Демо:</div><div class="uikitDemo"><div><div class="rootInputBox"><div class="rootInputBox"><div style="width: 100%;"><div class="textfieldBox rootInput rootInput"><input class="textfieldInput" value placeholder="С"><div class="textfieldIconBox"><div class="icon rootIcon" style="background-image: url(/d75e38094c43914238309cd269ed58c3.svg);"></div></div></div><div class="popUp"></div></div><div style="width: 100%;"><div class="textfieldBox rootInput rootInput"><input class="textfieldInput" value placeholder="По"><div class="textfieldIconBox"><div class="icon rootIcon" style="background-image: url(/d75e38094c43914238309cd269ed58c3.svg);"></div></div></div><div class="popUp"></div></div></div></div></div></div></div><div class="uikitBox"><div class="uikitTitle">OtcDateRange:</div><div class="uikitLabel">Выбрать диапазон дат со временем: С и ПО</div><div class="uikitTitle">Параметры:</div><div class="uikitParams"></div><div class="uikitTitle">Демо:</div><div class="uikitDemo"><div><div class="rootInputBox"><div class="rootInputBox"><div style="width: 100%;"><div class="textfieldBox rootInput rootInput"><input class="textfieldInput" value placeholder="С"><div class="textfieldIconBox"><div class="icon rootIcon" style="background-image: url(/d75e38094c43914238309cd269ed58c3.svg);"></div></div></div><div class="popUp"></div></div><div style="width: 100%;"><div class="textfieldBox rootInput rootInput"><input class="textfieldInput" value placeholder="По"><div class="textfieldIconBox"><div class="icon rootIcon" style="background-image: url(/d75e38094c43914238309cd269ed58c3.svg);"></div></div></div><div class="popUp"></div></div></div></div></div></div></div><div class="uikitBox"><div class="uikitTitle">OtcDateMonth:</div><div class="uikitLabel">Выбрать месяц (для Плана Закупок). (MM.YYYY или MMM YYYY)</div><div class="uikitTitle">Параметры:</div><div class="uikitParams"></div><div class="uikitTitle">Демо:</div><div class="uikitDemo"><div><div class="textfieldBox rootInput"><input class="textfieldInput" value><div class="textfieldIconBox"><div class="icon rootIcon" style="background-image: url(/d75e38094c43914238309cd269ed58c3.svg);"></div></div></div></div></div></div><div class="uikitBox"><div class="uikitTitle">OtcDateYear:</div><div class="uikitLabel">Выбрать год (YYYY)</div><div class="uikitTitle">Параметры:</div><div class="uikitParams"></div><div class="uikitTitle">Демо:</div><div class="uikitDemo"><div><div class="textfieldBox rootInput"><input class="textfieldInput" value><div class="textfieldIconBox"><div class="icon rootIcon" style="background-image: url(/d75e38094c43914238309cd269ed58c3.svg);"></div></div></div></div></div></div></div><script defer="defer" src="/bundle.e9665.js"></script><script>window.fetch||document.write('<script src="/polyfills.9c933.js"><\/script>')</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>habrahabr-universal-component</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta name="mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <link rel="manifest" href="/manifest.json">
+      <link rel="shortcut icon" href="/favicon.ico">
+      <link href="/style.a49d5.css" rel="stylesheet">
+   </head>
+   <body>
+      <div class="uikit">
+         <div class="uikitBox">
+            <div class="uikitTitle">OtcDate:</div>
+            <div class="uikitLabel">Выбрать одну дату без времени (DD.MM.YYYY), т.е. с точностью до дня</div>
+            <div class="uikitTitle">Параметры:</div>
+            <div class="uikitParams"></div>
+            <div class="uikitTitle">Демо:</div>
+            <div class="uikitDemo">
+               <div>
+                  <div class="textfieldBox rootInput">
+                     <input class="textfieldInput" value>
+                     <div class="textfieldIconBox">
+                        <div class="icon rootIcon" style="background-image: url(/d75e38094c43914238309cd269ed58c3.svg);"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="uikitBox">
+            <div class="uikitTitle">OtcDate:</div>
+            <div class="uikitLabel">Выбрать одну дату со временем (DD.MM.YYYY hh24:mi), т.е. с точностью до минуты.</div>
+            <div class="uikitTitle">Параметры:</div>
+            <div class="uikitParams"></div>
+            <div class="uikitTitle">Демо:</div>
+            <div class="uikitDemo">
+               <div>
+                  <div class="textfieldBox rootInput">
+                     <input class="textfieldInput" value>
+                     <div class="textfieldIconBox">
+                        <div class="icon rootIcon" style="background-image: url(/d75e38094c43914238309cd269ed58c3.svg);"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="uikitBox">
+            <div class="uikitTitle">OtcDate:</div>
+            <div class="uikitLabel">Выбрать одну дату со временем (DD.MM.YYYY hh24:mi), т.е. с точностью до минуты. (время обязательно для заполнения)</div>
+            <div class="uikitTitle">Параметры:</div>
+            <div class="uikitParams"></div>
+            <div class="uikitTitle">Демо:</div>
+            <div class="uikitDemo">
+               <div>
+                  <div class="textfieldBox rootInput">
+                     <input class="textfieldInput" value>
+                     <div class="textfieldIconBox">
+                        <div class="icon rootIcon" style="background-image: url(/d75e38094c43914238309cd269ed58c3.svg);"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="uikitBox">
+            <div class="uikitTitle">OtcDateRange:</div>
+            <div class="uikitLabel">Выбрать диапазон дат: С и ПО</div>
+            <div class="uikitTitle">Параметры:</div>
+            <div class="uikitParams"></div>
+            <div class="uikitTitle">Демо:</div>
+            <div class="uikitDemo">
+               <div>
+                  <div class="rootInputBox">
+                     <div class="rootInputBox">
+                        <div style="width: 100%;">
+                           <div class="textfieldBox rootInput rootInput">
+                              <input class="textfieldInput" value placeholder="С">
+                              <div class="textfieldIconBox">
+                                 <div class="icon rootIcon" style="background-image: url(/d75e38094c43914238309cd269ed58c3.svg);"></div>
+                              </div>
+                           </div>
+                           <div class="popUp"></div>
+                        </div>
+                        <div style="width: 100%;">
+                           <div class="textfieldBox rootInput rootInput">
+                              <input class="textfieldInput" value placeholder="По">
+                              <div class="textfieldIconBox">
+                                 <div class="icon rootIcon" style="background-image: url(/d75e38094c43914238309cd269ed58c3.svg);"></div>
+                              </div>
+                           </div>
+                           <div class="popUp"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="uikitBox">
+            <div class="uikitTitle">OtcDateRange:</div>
+            <div class="uikitLabel">Выбрать диапазон дат со временем: С и ПО</div>
+            <div class="uikitTitle">Параметры:</div>
+            <div class="uikitParams"></div>
+            <div class="uikitTitle">Демо:</div>
+            <div class="uikitDemo">
+               <div>
+                  <div class="rootInputBox">
+                     <div class="rootInputBox">
+                        <div style="width: 100%;">
+                           <div class="textfieldBox rootInput rootInput">
+                              <input class="textfieldInput" value placeholder="С">
+                              <div class="textfieldIconBox">
+                                 <div class="icon rootIcon" style="background-image: url(/d75e38094c43914238309cd269ed58c3.svg);"></div>
+                              </div>
+                           </div>
+                           <div class="popUp"></div>
+                        </div>
+                        <div style="width: 100%;">
+                           <div class="textfieldBox rootInput rootInput">
+                              <input class="textfieldInput" value placeholder="По">
+                              <div class="textfieldIconBox">
+                                 <div class="icon rootIcon" style="background-image: url(/d75e38094c43914238309cd269ed58c3.svg);"></div>
+                              </div>
+                           </div>
+                           <div class="popUp"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="uikitBox">
+            <div class="uikitTitle">OtcDateMonth:</div>
+            <div class="uikitLabel">Выбрать месяц (для Плана Закупок). (MM.YYYY или MMM YYYY)</div>
+            <div class="uikitTitle">Параметры:</div>
+            <div class="uikitParams"></div>
+            <div class="uikitTitle">Демо:</div>
+            <div class="uikitDemo">
+               <div>
+                  <div class="textfieldBox rootInput">
+                     <input class="textfieldInput" value>
+                     <div class="textfieldIconBox">
+                        <div class="icon rootIcon" style="background-image: url(/d75e38094c43914238309cd269ed58c3.svg);"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="uikitBox">
+            <div class="uikitTitle">OtcDateYear:</div>
+            <div class="uikitLabel">Выбрать год (YYYY)</div>
+            <div class="uikitTitle">Параметры:</div>
+            <div class="uikitParams"></div>
+            <div class="uikitTitle">Демо:</div>
+            <div class="uikitDemo">
+               <div>
+                  <div class="textfieldBox rootInput">
+                     <input class="textfieldInput" value>
+                     <div class="textfieldIconBox">
+                        <div class="icon rootIcon" style="background-image: url(/d75e38094c43914238309cd269ed58c3.svg);"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script defer="defer" src="/bundle.0f625.js"></script><script>window.fetch||document.write('<script src="/polyfills.8e94c.js"><\/script>')</script>
+   </body>
+</html>
